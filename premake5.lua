@@ -43,17 +43,20 @@ project "Core"
     {
         "Engine/Source/Runtime/Core/Public",
 
-        "Engine/ThirdPartySDKs/SDL3-3.2.14/include"
+        "Engine/ThirdPartySDKs/SDL3-3.2.14/include",
+        "C:/VulkanSDK/1.4.304.1/Include"
     }
 
     libdirs
     {
-        "Engine/ThirdPartySDKs/SDL3-3.2.14/lib/x64"
+        "Engine/ThirdPartySDKs/SDL3-3.2.14/lib/x64",
+        "C:/VulkanSDK/1.4.304.1/Lib"
     }
 
     links
     {
-        "SDL3"
+        "SDL3",
+        "vulkan-1"
     }
 
     filter "configurations:DebugGame"
