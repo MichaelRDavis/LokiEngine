@@ -1,0 +1,11 @@
+*.vs
+*.sln
+*.vcxproj
+*.vcxproj.user
+*.vcxproj.filters
+
+*.exe
+
+**/Binaries/**
+**/Intermediate/**
+**/ThirdPartySDKs/**
