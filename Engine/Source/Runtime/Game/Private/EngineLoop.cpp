@@ -25,6 +25,7 @@ int WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int n
 	viewport.m_ViewportHeight = description.m_Height;
 
 	CRenderer renderer;
+	renderer.CreateInstance();
 	renderer.CreateRenderViewport(viewport);
 
 	while (!CPlatform::m_PlatformData.m_Quit)

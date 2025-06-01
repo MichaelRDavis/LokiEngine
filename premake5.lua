@@ -89,7 +89,8 @@ project "Game"
         "Engine/Source/Runtime/Core/Public",
         "Engine/Source/Runtime/Game/Public",
 
-        "Engine/ThirdPartySDKs/SDL3-3.2.14/include"
+        "Engine/ThirdPartySDKs/SDL3-3.2.14/include",
+        "C:/VulkanSDK/1.4.304.1/Include"
     }
 
     libdirs

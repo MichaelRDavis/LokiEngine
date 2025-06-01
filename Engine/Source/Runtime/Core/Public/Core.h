@@ -61,3 +61,7 @@ static_assert(sizeof(uint64) == 8, "uint64 not 8 bytes!");
 // ThirdParty includes 
 #include <SDL3/SDL.h>
 #include <SDL3/SDL_vulkan.h>
+#include <vulkan/vulkan.h>
+
+// C++ STD includes
+#include <vector>
