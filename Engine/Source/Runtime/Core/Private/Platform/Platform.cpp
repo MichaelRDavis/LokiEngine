@@ -4,11 +4,17 @@ PlatformData CPlatform::m_PlatformData;
 
 void CPlatform::CreateConsole()
 {
-    
+#ifdef LOKI_WINDOWS_PLATFORM
+    AllocConsole();
+#endif
 }
 
 bool CPlatform::CreateApplication()
 {
+#ifdef LOKI_BUILD_DEBUG
+    CreateConsole();
+#endif
+
     uint32 subsystemFlags = SDL_INIT_VIDEO;
     if (!SDL_Init(subsystemFlags))
     {
